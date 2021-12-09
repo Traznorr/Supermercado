@@ -279,7 +279,7 @@ function escribirComando() {
     console.log(style_body.getPropertyValue("background-image"));
 
       
-    if(style_body.getPropertyValue("background-image") == 'url("https://traznorr.github.io/Supermercado/16618.jpg")'){
+    if(style_body.getPropertyValue("background-image") == 'supermercadocajas.js:279 url("https://traznorr.github.io/Supermercado/16618.jpg")'){
 
         document.getElementById('body').style.backgroundImage='url(noche.jpg)';
         console.log(style_body.getPropertyValue("background-image"));
