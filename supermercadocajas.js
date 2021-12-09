@@ -273,6 +273,7 @@ function escribirComando() {
 
   function ponerOscuro(){
 
+    let body = document.getElementById('body'); // cambiar atributos HTML / CSS
     
     var style_body = window.getComputedStyle(body); // obtener atributos CSS 
     
@@ -281,7 +282,7 @@ function escribirComando() {
       
     if(style_body.getPropertyValue("background-image") == rutaImagenFondoOriginal){
 
-        
+        let body = document.getElementById('body'); // cambiar atributos HTML / CSS
         body.style.backgroundImage='url(noche.jpg)';
 
     } else {
