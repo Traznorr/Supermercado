@@ -1,6 +1,11 @@
 
 var inicio;
 
+
+let body = document.querySelector("#body"); // cambiar atributos HTML / CSS
+var style_body = window.getComputedStyle(body); // obtener atributos CSS 
+var rutaImagenFondoOriginal = style_body.getPropertyValue("background-image");
+
 // hacer dos botones uno paraguardar y otro para recuperar, usando web storage para que guarde como van las cajas
 
 function cambiarClientes(tipo_accion,numeroCaja) {
@@ -268,58 +273,164 @@ function escribirComando() {
 
   function ponerOscuro(){
 
-    let body = document.getElementById("body");  
+    let body = document.getElementById('body'); // cambiar atributos HTML / CSS
     
-    
-
-    let bodyOscuro = document.querySelector("#body"); // cambiar atributos HTML / CSS
-    
-    var style_body = window.getComputedStyle(bodyOscuro); // obtener atributos CSS 
+    var style_body = window.getComputedStyle(body); // obtener atributos CSS 
     
     console.log(style_body.getPropertyValue("background-image"));
 
       
-    if(style_body.getPropertyValue("background-image") == 'supermercadocajas.js:279 url("https://traznorr.github.io/Supermercado/16618.jpg")'){
+    if(style_body.getPropertyValue("background-image") == rutaImagenFondoOriginal){
 
-        console.log("hola"+style_body.getPropertyValue("background-image"));
-        document.getElementById('body').style.backgroundImage='url(noche.jpg)';
-        
+        let body = document.getElementById('body'); // cambiar atributos HTML / CSS
+        body.style.backgroundImage='url(noche.jpg)';
 
-    } else if(style_body.getPropertyValue("background-image") == 'url("http://127.0.0.1:5500/noche.jpg")') {
+    } else {
 
-        document.getElementById('body').style.backgroundImage = 'url(16618.jpg)';
+        body.style.backgroundImage = 'url(16618.jpg)';
+
     }  
+
   }
 
   // BOTON BORRAR FONDO
     function borrarFondo() {
+        
+        let body = document.getElementById('body'); // cambiar atributos HTML / CSS
+        
+        var style_body = window.getComputedStyle(body); // obtener atributos CSS 
+        
+        console.log(style_body.getPropertyValue("background-image"));
+        console.log(body.style.backgroundImage);
+        
+        // comprobamos si la imagen original está activa / mostrándose todavía:
+        if(style_body.getPropertyValue("background-image") == rutaImagenFondoOriginal){
 
-        let body = document.getElementById("body");  
-    
-    
+            body.style.backgroundImage='url()';
 
-    let bodyFondo = document.querySelector("#body"); // cambiar atributos HTML / CSS
-    
-    var style_body = window.getComputedStyle(bodyFondo); // obtener atributos CSS 
-    
-    console.log(style_body.getPropertyValue("background-image"));
+        } else {
 
-      
-    if(style_body.getPropertyValue("background-image") == 'url("http://127.0.0.1:5500/16618.jpg")'){
-
-        document.getElementById('body').style.backgroundImage='url()';
-
-    } else if(style_body.getPropertyValue("background-image") == 'url("http://127.0.0.1:5500/03NOV-PracticaObjetos.html")') {
-
-        document.getElementById('body').style.backgroundImage = 'url(16618.jpg)';
-    }  
-
+            body.style.backgroundImage = 'url(16618.jpg)';
+        }  
+        
+                   
     }
 
 //con esto desactivamos el menu desplegable cuando usamos el boton derecho .
 /*window.oncontextmenu = function () {
     return false;
 }
+*/
+
+
+    // for in   for of 
+    //for (let index = 0; index < cajasValue_json.length; index++) {
+/*
+        console.log("pasa por 2");
+
+        console.log("mostramos el atributo número " + index)
+        console.log(cajasValue_json[ index ]);
+*/
+        /*
+        let divcaja = document.querySelector(`#divcaja ` + index); // cambiar atributos HTML / CSS
+        divcaja.style.background = "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(94,253,45,1) 100%)";
+
+        let div_mensaje = document.getElementById(`mensaje ` + index);
+        div_mensaje.innerHTML = "<br>En la caja hay " + cajas[index-1] + " cliente";
+        */
+    //}
+
+/* 
+    if(cajasId[i] == "CAJA1"){
+
+        // ponemos el verde la caja1
+        let divcaja1 = document.querySelector("#divcaja1"); // cambiar atributos HTML / CSS
+        divcaja1.style.background = "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(94,253,45,1) 100%)";
+
+        let div_mensaje = document.getElementById('mensaje1');
+        div_mensaje.innerHTML = "<br>En la caja hay " + cajaValue1 + " cliente";
+                                     
+    }else if(cajasId[i] == "CAJA2"){
+
+        // ponemos el verde la caja1
+        let divcaja2 = document.querySelector("#divcaja2"); // cambiar atributos HTML / CSS
+        divcaja2.style.background = "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(94,253,45,1) 100%)";
+
+        let div_mensaje = document.getElementById('mensaje2');
+        div_mensaje.innerHTML = "<br>En la caja hay " + cajaValue2 + " cliente";
+                                     
+    } */
+   
+    //let cantidad_caja1 = window.localStorage.getItem("caja1"); 
+
+    
+    /* let cajasId = [datos_caja1.id, datos_caja2.id];
+
+    let cajaValue1 = datos_caja1.value;  
+    let cajaValue2 = datos_caja2.value;
+
+    let cajasValue = [cajaValue1, cajaValue2]; */
+
+    /* for (let i = 0; i < cajasValue.length; i++) {
+
+        console.log("adios" + cajasId[i]);
+        window.localStorage.getItem(cajasId[i], cajasValue[i]);
+        console.log("hola" + cajasValue[i] );
+        // window.localStorage.getItem(cajasId[i]);
+
+        console.log(localStorage);
+
+        if(cajasId[i] == "CAJA1"){
+
+            // ponemos el verde la caja1
+            let divcaja1 = document.querySelector("#divcaja1"); // cambiar atributos HTML / CSS
+            divcaja1.style.background = "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(94,253,45,1) 100%)";
+    
+            let div_mensaje = document.getElementById('mensaje1');
+            div_mensaje.innerHTML = "<br>En la caja hay " + cajaValue1 + " cliente";
+                                         
+        }else if(cajasId[i] == "CAJA2"){
+    
+            // ponemos el verde la caja1
+            let divcaja2 = document.querySelector("#divcaja2"); // cambiar atributos HTML / CSS
+            divcaja2.style.background = "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(94,253,45,1) 100%)";
+    
+            let div_mensaje = document.getElementById('mensaje2');
+            div_mensaje.innerHTML = "<br>En la caja hay " + cajaValue2 + " cliente";
+                                         
+        }
+    } */
+
+
+    
+    // actualizamos el estilo visual de la caja1 de acuerdo a la variable cantidad_caja1
+
+    // [x] en el caso de que haya clientes estará en verde
+
+    // [x] en el caso de que haya 2 clientes, me saldra el mensaje de que hay dos, etc
+    /*
+    if(cajasId[i] == "CAJA1"){
+
+        // ponemos el verde la caja1
+        let divcaja1 = document.querySelector("#divcaja1"); // cambiar atributos HTML / CSS
+        divcaja1.style.background = "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(94,253,45,1) 100%)";
+
+        let div_mensaje = document.getElementById('mensaje1');
+        div_mensaje.innerHTML = "<br>En la caja hay " + cajaValue1 + " cliente";
+                                     
+    }
+
+    if(cajasId[i] == "CAJA2"){
+
+        // ponemos el verde la caja1
+        let divcaja2 = document.querySelector("#divcaja2"); // cambiar atributos HTML / CSS
+        divcaja2.style.background = "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(94,253,45,1) 100%)";
+
+        let div_mensaje = document.getElementById('mensaje2');
+        div_mensaje.innerHTML = "<br>En la caja hay " + cajaValue + " cliente";
+                                     
+    }
+
 */
 
 
