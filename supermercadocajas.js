@@ -272,7 +272,7 @@ function escribirComando() {
 
 
   function ponerOscuro(){
-¡
+
     
     var style_body = window.getComputedStyle(body); // obtener atributos CSS 
     
