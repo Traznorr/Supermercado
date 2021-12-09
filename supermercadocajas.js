@@ -283,7 +283,7 @@ function escribirComando() {
     if(style_body.getPropertyValue("background-image") == rutaImagenFondoOriginal){
 
         let body = document.getElementById('body'); // cambiar atributos HTML / CSS
-        body.style.backgroundImage='url(noche.jpgs)';
+        body.style.backgroundImage='url(noche.jpg)';
 
     } else {
 
