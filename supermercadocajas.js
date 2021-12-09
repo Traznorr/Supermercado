@@ -282,6 +282,7 @@ function escribirComando() {
     if(style_body.getPropertyValue("background-image") == 'url("https://traznorr.github.io/Supermercado/16618.jpg")'){
 
         document.getElementById('body').style.backgroundImage='url(noche.jpg)';
+        console.log(style_body.getPropertyValue("background-image"));
 
     } else if(style_body.getPropertyValue("background-image") == 'url("http://127.0.0.1:5500/noche.jpg")') {
 
