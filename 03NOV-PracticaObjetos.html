@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Ejercicio de Ejemplo
+DWEC-UD2
+autor: Carlos Boni
+fecha: Agosto 2021
+ENUNCIADO:
+  Ir gradualmente mejorando, paso a paso, hasta llegar
+  donde mejor puedan o quieran. Lo importante es
+  superarse a ustedes mismos, e intentar ser el mejor si
+  se animan...
+  Iremos añadiendo elementos durante la clase.
+  INICIAL: crear el botón con leyenda COMENZAR que al
+  pincharlo pone en cada caja el mensaje: "cola: vacía"
+
+-->
+
+<head>
+  <title>Ejercicios Javascript</title>
+  <meta charset="UTF-8">
+
+<link rel="stylesheet" href="estilosSuper.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+</head>
+
+<body oncontextmenu="return false;" id="body"> <!--Usamos este oncontextmenu para desactivar el desplegable del boton derecho en la web-->
+
+  
+
+
+    <div class="menu">
+      <a class="Botones"><input type="button" id="boton_guardar" onclick="guardarCargar.guardarDatos()" value = "Guardar"></a>
+      <a class="Botones"><input type="button" id="boton_recargar" onclick="guardarCargar.cargarMercado()" value = "Cargar"></a>
+      <a class="Botones"><input type="button" onclick="ponerOscuro()" value = "Noche"></a>
+      <a class="Botones"><input type="button" onclick="borrarFondo()" value = "Borrar Fondo"></a>
+      <a href="guz_documentacion.pdf" class="Botones">Documentación PDF</a>
+    </div>
+
+    <div id="zonacajas">
+
+      <div type="button" id="divcaja1"  onclick="cambiarClientes('poner', 'caja1')">CAJA1<input type="hidden" id="CAJA1" value="0"><p id="mensaje1"></p></div>
+      <div type="button" id="divcaja2"  onclick="cambiarClientes('poner', 'caja2')">CAJA2<input type="hidden" id="CAJA2" value="0"><p id="mensaje2"></p></div>
+      <div type="button" id="divcaja3"  onclick="cambiarClientes('poner', 'caja3')">CAJA3<input type="hidden" id="CAJA3" value="0"><p id="mensaje3"></p></div>
+      <div type="button" id="divcaja4"  onclick="cambiarClientes('poner', 'caja4')">CAJA4<input type="hidden" id="CAJA4" value="0"><p id="mensaje4"></p></div>
+    </div>
+
+    
+    <div class = "Comando">
+      
+      <div class="entrada_comandos">
+        <label>Comandos:</label>
+        <input type="text" id="comando" value="Caja" class = "textoComando">
+        
+      </div>
+
+      <div class = "botonComando">
+
+        <a>
+        
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="button"  id="boton_comando" onclick="escribirComando()" value="Procesar Comando" >
+        </a>
+      </div>
+    </div>
+    
+   
+
+  </form>
+
+  <script  src="Guardarcargar.js"></script>
+ 
+
+  <script src="supermercadocajas.js"></script>
+
+
+ 
+
+</body>
+
+</html>

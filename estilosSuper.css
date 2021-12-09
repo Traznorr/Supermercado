@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+    margin: 0pt;
+    padding: 5pt;
+  }
+  .wrapper{
+    height: 100%;
+    background-color:white;
+}
+
+
+ 
+
+  /*Botones Guardar, Cargar y Documentacion PDF*/
+
+  .Botones{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 15px;
+    border: 3px double #006505;
+  }
+  .Botones [value ="Guardar"]{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 15px;  
+  }
+  .Botones [value ="Cargar"]{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 15px;  
+  }
+
+  .Botones [value ="Noche"]{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 15px;  
+  }
+
+  .Botones [value ="Borrar Fondo"]{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 15px;  
+  }
+
+  .Botones:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+
+  
+  p {
+    font-size: calc(8px + 0.5vw + 0.5vh);
+  }
+  h1 {
+    font-size: calc(16px + 0.5vw + 0.5vh);
+  }
+
+  
+  body {
+    background-image: url("16618.jpg") ;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:sans-serif;
+    background-repeat:no-repeat;
+  }
+
+
+  @media (min-width: 400px) {  
+    body {
+      background-image: url("movil.jpg") ;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family:sans-serif;
+      background-repeat:no-repeat;
+    }
+  } 
+
+  @media (min-width: 600px) {  
+    body {
+      background-image: url("16618.jpg") ;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family:sans-serif;
+      background-repeat:no-repeat;
+    }
+  } 
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+    
+
+  #zonacajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-size: 1.25rem;
+    
+  }
+
+
+
+  #divcaja1, #divcaja2, #divcaja3, #divcaja4 {
+    width: 200px;
+    height: 100px;
+    border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    animation: wave 5s linear infinite;
+    margin: 100px auto;
+    vertical-align: top;
+    text-align: center;
+   
+  }
+
+  @keyframes wave {
+    20%{
+      border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+    }
+    40%{
+      border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+    }
+    60%{
+      border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+    }
+    80%{
+      border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+    }
+  }
+
+
+
+ 
+
+  .cajaAbierta {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(94,253,45,1) 100%);
+    visibility:visible;
+  }
+ 
+
+
+
+#zonaboton {
+    background-color: var(--fondozonaboton);
+    width: 25%;
+    height: 10vh;
+    margin: 5vh 1vw 5vh 1vw;
+  }
+
+  
+ /*Estilos CAJA COMANDOS*/
+  .Comando {
+    position: absolute;
+    bottom: -6.5%;
+    right: -10%;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    font-family:sans-serif;
+  }
+  label{
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .entrada_comandos [value="Caja"]{
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .botonComando [value ="Procesar Comando"] {
+     position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: .5s;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #91C63C;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    
+    
+    
+    
+  }
+
+  .botonComando [value ="Procesar Comando"]:hover {
+    
+    transition: .5s;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+ 
+  .botonComando a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: .5s;
+    transform: translateX(-4%);
+    
+    
+  }
+
+  .botonComando a:hover {
+    background: #91C63C;
+    transition: .5s;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #91C63C,
+                0 0 25px #91C63C,
+                0 0 50px #91C63C,
+                0 0 100px #91C63C;
+  }
+
+
+
+  .botonComando a  span {
+    position: absolute;
+    display: block;
+  }
+
+  
+
+  .botonComando a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #91C63C);
+    animation: btn-anim1 1s linear infinite;
+    
+  }
+
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+      
+    }
+  }
+  span{
+    padding: 1px;
+  }
+  
+  .botonComando a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #91C63C);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+
+  .botonComando a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #91C63C);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100%{
+      right: 100%;
+    }
+  }
+  
+  .botonComando a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #91C63C);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+  
+
+
+
+  
+  
