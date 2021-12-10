@@ -32,14 +32,16 @@ ENUNCIADO:
   
 
 
-    <div class="menu">
-      <a class="Botones"><input type="button" id="boton_guardar" onclick="guardarCargar.guardarDatos()" value = "Guardar"></a>
-      <a class="Botones"><input type="button" id="boton_recargar" onclick="guardarCargar.cargarMercado()" value = "Cargar"></a>
-      <a class="Botones"><input type="button" onclick="ponerOscuro()" value = "Noche"></a>
-      <a class="Botones"><input type="button" onclick="borrarFondo()" value = "Borrar Fondo"></a>
-      <a href="guz_documentacion.pdf" class="Botones">Documentación PDF</a>
-      <a href="Qr_supermercado.pdf" class="Botones">QR</a>
-    </div>
+  
+    <nav class="navegacion-principal contenedor">
+      <a ><input  type="button" id="boton_guardar" onclick="guardarCargar.guardarDatos()" value = "Guardar"></a>
+      <a ><input type="button" id="boton_recargar" onclick="guardarCargar.cargarMercado()" value = "Cargar"></a>
+      <a><input type="button" onclick="ponerOscuro()" value = "Noche"></a>
+      <a><input type="button" onclick="borrarFondo()" value = "Borrar Fondo"></a>
+      <a href="guz_documentacion.pdf" value="Documentacion PDF">Documentacion PDF</a>
+      <a href="Qr_supermercado.pdf" value="QR">QR</a>
+    </nav>
+    
 
     <div id="zonacajas">
 

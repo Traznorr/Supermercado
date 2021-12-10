@@ -10,7 +10,7 @@
  
 
   /*Botones Guardar, Cargar y Documentacion PDF*/
-
+/*
   .Botones{
     text-decoration: none;
     padding: 3px;
@@ -92,6 +92,134 @@
     opacity: 0.6;
     text-decoration: none;
   }
+  */
+  .contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+.navegacion-principal{
+    
+    display: flex;
+    flex-direction: column;
+   
+     
+}
+
+
+
+.navegacion-principal a{
+  background-color: #82b085;
+    text-align: center;
+    color: var(--blaco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    border: 3px double #006505;
+    border-radius: 15px;
+  
+}
+
+.navegacion-principal [value ="Guardar"]{
+  background-color: #82b085;
+  border: none;
+  outline: none;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #006505;
+  background-color: #82b085;
+  border-radius: 15px;  
+}
+
+.navegacion-principal [value ="Borrar Fondo"]{
+  background-color: #82b085;
+  border: none;
+  outline: none;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #006505;
+  background-color: #82b085;
+  border-radius: 15px;  
+}
+.navegacion-principal [value ="Cargar"]{
+  background-color: #82b085;
+  border: none;
+  outline: none;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #006505;
+  background-color: #82b085;
+  
+}
+
+.navegacion-principal [value ="Noche"]{
+  background-color: #82b085;
+  border: none;
+  outline: none;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #006505;
+  background-color: #82b085;
+ 
+}
+.navegacion-principal [value ="Documentacion PDF"]{
+  
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #006505;
+  background-color: #82b085;
+  
+  
+}
+.navegacion-principal [value ="QR"]{
+  
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #006505;
+  background-color: #82b085;
+  
+  
+}
+
+
+  @media (min-width: 768px) {
+  .navegacion-principal{
+   flex-direction: row;
+   justify-content: space-between;
+  }
+}
+
+.navegacion-principal a:hover{
+  opacity: 0.6;
+  text-decoration: none;
+}
+
 
   
   p {
