@@ -1,8 +1,6 @@
-* {
-    box-sizing: border-box;
-    margin: 0pt;
-    padding: 5pt;
-  }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
   .wrapper{
     height: 100%;
     background-color:white;
