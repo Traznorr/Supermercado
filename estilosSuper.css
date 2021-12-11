@@ -12,8 +12,14 @@
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: white;
+  font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 15px;
+    border: 3px double #006505;
 }
 
 .brand-title {
@@ -28,7 +34,27 @@
   height: 100%;
   background-color: transparent;
   border: none;
+  color: #006505;
 }
+.navbar-links [value ="Cargar"] {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #006505;
+}
+.navbar-links [value ="Noche"] {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #006505;
+}
+.navbar-links [value ="Borrar Fondo"] {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #006505;
+}
+
 
 .navbar-links ul {
   display: flex;
@@ -43,12 +69,13 @@
 .navbar-links li a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: #006505;
   padding: 1rem;
 }
 
 .navbar-links li:hover {
-  background-color: #555;
+  background-color: rgb(75, 175, 8);
+  opacity: 0.6;
 }
 
 .toggle-button {
@@ -99,6 +126,10 @@
 
   .navbar-links.active {
       display: flex;
+  }
+  .navbar-links li:hover {
+    background-color: rgb(75, 175, 8);
+    opacity: 0.6;
   }
 }
 
