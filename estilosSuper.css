@@ -24,6 +24,11 @@
 .navbar-links {
   height: 100%;
 }
+.navbar-links [value ="Guardar"] {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
 
 .navbar-links ul {
   display: flex;
