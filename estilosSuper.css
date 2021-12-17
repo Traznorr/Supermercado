@@ -6,6 +6,7 @@
     background-color:white;
 }
 
+/*NAVEGADOR*/
 
 .navbar {
   display: flex;
@@ -21,7 +22,7 @@
     border-radius: 15px;
     border: 3px double #006505;
 }
-/*HOla*/
+
 .brand-title {
   font-size: 1.5rem;
   margin: .5rem;
@@ -133,219 +134,7 @@
   }
 }
 
-  /*Botones Guardar, Cargar y Documentacion PDF*/
-/*
-  .Botones{
-    text-decoration: none;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: helvetica;
-    font-weight: 300;
-    font-size: 25px;
-    font-style: italic;
-    color: #006505;
-    background-color: #82b085;
-    border-radius: 15px;
-    border: 3px double #006505;
-  }
-  .Botones [value ="Guardar"]{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: helvetica;
-    font-weight: 300;
-    font-size: 25px;
-    font-style: italic;
-    color: #006505;
-    background-color: #82b085;
-    border-radius: 15px;  
-  }
-  .Botones [value ="Cargar"]{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: helvetica;
-    font-weight: 300;
-    font-size: 25px;
-    font-style: italic;
-    color: #006505;
-    background-color: #82b085;
-    border-radius: 15px;  
-  }
-
-  .Botones [value ="Noche"]{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: helvetica;
-    font-weight: 300;
-    font-size: 25px;
-    font-style: italic;
-    color: #006505;
-    background-color: #82b085;
-    border-radius: 15px;  
-  }
-
-  .Botones [value ="Borrar Fondo"]{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: helvetica;
-    font-weight: 300;
-    font-size: 25px;
-    font-style: italic;
-    color: #006505;
-    background-color: #82b085;
-    border-radius: 15px;  
-  }
-
-  .Botones:hover{
-    opacity: 0.6;
-    text-decoration: none;
-  }
-  
-  .contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-
-.navegacion-principal{
-    
-    display: flex;
-    flex-direction: column;
-   
-     
-}
-
-
-
-.navegacion-principal a{
-  background-color: #82b085;
-    text-align: center;
-    color: var(--blaco);
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 1rem;
-    border: 3px double #006505;
-    border-radius: 15px;
-  
-}
-
-.navegacion-principal [value ="Guardar"]{
-  background-color: #82b085;
-  border: none;
-  outline: none;
-  padding: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: helvetica;
-  font-weight: 300;
-  font-size: 25px;
-  font-style: italic;
-  color: #006505;
-  background-color: #82b085;
-  border-radius: 15px;  
-}
-
-.navegacion-principal [value ="Borrar Fondo"]{
-  background-color: #82b085;
-  border: none;
-  outline: none;
-  padding: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: helvetica;
-  font-weight: 300;
-  font-size: 25px;
-  font-style: italic;
-  color: #006505;
-  background-color: #82b085;
-  border-radius: 15px;  
-}
-.navegacion-principal [value ="Cargar"]{
-  background-color: #82b085;
-  border: none;
-  outline: none;
-  padding: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: helvetica;
-  font-weight: 300;
-  font-size: 25px;
-  font-style: italic;
-  color: #006505;
-  background-color: #82b085;
-  
-}
-
-.navegacion-principal [value ="Noche"]{
-  background-color: #82b085;
-  border: none;
-  outline: none;
-  padding: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: helvetica;
-  font-weight: 300;
-  font-size: 25px;
-  font-style: italic;
-  color: #006505;
-  background-color: #82b085;
- 
-}
-.navegacion-principal [value ="Documentacion PDF"]{
-  
-  font-family: helvetica;
-  font-weight: 300;
-  font-size: 25px;
-  font-style: italic;
-  color: #006505;
-  background-color: #82b085;
-  
-  
-}
-.navegacion-principal [value ="QR"]{
-  
-  font-family: helvetica;
-  font-weight: 300;
-  font-size: 25px;
-  font-style: italic;
-  color: #006505;
-  background-color: #82b085;
-  
-  
-}
-
-
-  @media (min-width: 768px) {
-  .navegacion-principal{
-   flex-direction: row;
-   justify-content: space-between;
-  }
-}
-
-.navegacion-principal a:hover{
-  opacity: 0.6;
-  text-decoration: none;
-}
-
-
-  */
+/*BODY*/
   p {
     font-size: calc(8px + 0.5vw + 0.5vh);
   }
@@ -386,13 +175,9 @@
     }
   } 
 
-  .menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  
     
+  /*CAJAS*/
 
   #zonacajas {
     display: flex;
@@ -561,6 +346,8 @@
     
   }
 
+  /*RESPONSIVE CAJAS*/
+
   @keyframes btn-anim1 {
     0% {
       left: -100%;
@@ -631,11 +418,9 @@
     }
   }
 
+  /*RESPONSIVE CAJAS Y CAJA COMANDO*/
   @media (max-width: 500px) {
-    /* #zonacajas {
-        display: grid;
-        grid-auto-flow: column;
-    }*/
+    
     #divcaja1, #divcaja2, #divcaja3, #divcaja4 {
       width: 125px;
       height: 75px;
