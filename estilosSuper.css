@@ -438,28 +438,6 @@
     }
   }
 
-  @media (max-width: 500px) {
-    /* #zonacajas {
-        display: grid;
-        grid-auto-flow: column;
-    }*/
-    #divcaja1, #divcaja2, #divcaja3, #divcaja4 {
-      width: 125px;
-      height: 75px;
-      margin: 50px auto;
-      vertical-align: top;
-      text-align: center;
-     
-    } 
-
-    .Comando {
-     
-      right: -25%;
-    
-    }
-
-
-  }
 
 
 
@@ -663,6 +641,7 @@
       right: -25%;
     
     }
+  }
 
 
   
