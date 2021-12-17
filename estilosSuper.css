@@ -641,6 +641,11 @@
       right: -25%;
     
     }
+
+    .comandoPadre{
+      display: flex;
+      flex-direction: row;
+    }
   }
 
 

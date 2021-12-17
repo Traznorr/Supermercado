@@ -22,15 +22,16 @@ ENUNCIADO:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./normalize.css">
-<link rel="stylesheet" href="estilosSuper.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="estilosSuper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
 </head>
 
-<body oncontextmenu="return false;" id="body"> <!--Usamos este oncontextmenu para desactivar el desplegable del boton derecho en la web-->
+<body oncontextmenu="return false;" id="body">
+  <!--Usamos este oncontextmenu para desactivar el desplegable del boton derecho en la web-->
 
-  
- 
+
+
   <nav class="navbar">
     <div class="brand-title">Supermercado</div>
     <a href="#" class="toggle-button">
@@ -40,58 +41,73 @@ ENUNCIADO:
     </a>
     <div class="navbar-links">
       <ul>
-        <li><a><input type="button" id="boton_guardar" onclick="guardarCargar.guardarDatos()" value = "Guardar"></a></li>
-        <li><a><input type="button" id="boton_recargar" onclick="guardarCargar.cargarMercado()" value = "Cargar"></a></li>
-        <li><a><input type="button" onclick="ponerOscuro()" value = "Noche"></a></li>
-        <li><a><input type="button" onclick="borrarFondo()" value = "Borrar Fondo"></a></li>
+        <li><a><input type="button" id="boton_guardar" onclick="guardarCargar.guardarDatos()" value="Guardar"></a></li>
+        <li><a><input type="button" id="boton_recargar" onclick="guardarCargar.cargarMercado()" value="Cargar"></a></li>
+        <li><a><input type="button" onclick="ponerOscuro()" value="Noche"></a></li>
+        <li><a><input type="button" onclick="borrarFondo()" value="Borrar Fondo"></a></li>
         <li><a href="guz_documentacion.pdf" value="Documentacion PDF">Documentacion PDF</a></li>
         <li><a href="Qr_supermercado.pdf" value="QR">QR</a></li>
       </ul>
     </div>
-  </nav> 
-    
+  </nav>
 
 
-    <div id="zonacajas">
 
-      <div type="button" id="divcaja1"  onclick="cambiarClientes('poner', 'caja1')">CAJA1<input type="hidden" id="CAJA1" value="0"><p id="mensaje1"></p></div>
-      <div type="button" id="divcaja2"  onclick="cambiarClientes('poner', 'caja2')">CAJA2<input type="hidden" id="CAJA2" value="0"><p id="mensaje2"></p></div>
-      <div type="button" id="divcaja3"  onclick="cambiarClientes('poner', 'caja3')">CAJA3<input type="hidden" id="CAJA3" value="0"><p id="mensaje3"></p></div>
-      <div type="button" id="divcaja4"  onclick="cambiarClientes('poner', 'caja4')">CAJA4<input type="hidden" id="CAJA4" value="0"><p id="mensaje4"></p></div>
+  <div id="zonacajas">
+
+    <div type="button" id="divcaja1" onclick="cambiarClientes('poner', 'caja1')">CAJA1<input type="hidden" id="CAJA1"
+        value="0">
+      <p id="mensaje1"></p>
     </div>
+    <div type="button" id="divcaja2" onclick="cambiarClientes('poner', 'caja2')">CAJA2<input type="hidden" id="CAJA2"
+        value="0">
+      <p id="mensaje2"></p>
+    </div>
+    <div type="button" id="divcaja3" onclick="cambiarClientes('poner', 'caja3')">CAJA3<input type="hidden" id="CAJA3"
+        value="0">
+      <p id="mensaje3"></p>
+    </div>
+    <div type="button" id="divcaja4" onclick="cambiarClientes('poner', 'caja4')">CAJA4<input type="hidden" id="CAJA4"
+        value="0">
+      <p id="mensaje4"></p>
+    </div>
+  </div>
 
-    
-    <div class = "Comando">
-      
+  <div class="comandoPadre">
+    <div class="Comando">
+
       <div class="entrada_comandos">
         <label>Comandos:</label>
-        <input type="text" id="comando" value="Caja" class = "textoComando">
-        
+        <input type="text" id="comando" value="Caja" class="textoComando">
+
       </div>
 
-      <div class = "botonComando">
+      <div class="botonComando">
 
         <a>
-        
+
           <span></span>
           <span></span>
           <span></span>
           <span></span>
-          <input type="button"  id="boton_comando" onclick="escribirComando()" value="Procesar Comando" >
+          <input type="button" id="boton_comando" onclick="escribirComando()" value="Procesar Comando">
         </a>
       </div>
     </div>
-    
-   
+  </div>
+
+
+
+
 
   </form>
 
-  <script  src="Guardarcargar.js"></script>
+  <script src="Guardarcargar.js"></script>
   <script src="supermercadocajas.js"></script>
   <script src="barraNavegador.js"></script>
 
 
- 
+
 
 </body>
 
